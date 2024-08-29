@@ -31,7 +31,15 @@ export default function Home() {
       scrollTrigger: {
         trigger: "#topContainer",
         start: "bottom bottom",
+        end: "bottom top",
         scrub: 1,
+        markers: {
+          startColor: "red",
+          endColor: "green",
+          fontSize: "18px",
+          fontWeight: "bold",
+          indent: 20
+        },
       },
     });
     gsap.to("#track",{
@@ -43,6 +51,13 @@ export default function Home() {
         trigger: "#topContainer",
         start: "50% 50%",
         scrub: 1,
+        markers: {
+          startColor: "red",
+          endColor: "green",
+          fontSize: "18px",
+          fontWeight: "bold",
+          indent: 20
+        },
       },
     });
   },{
